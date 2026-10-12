@@ -1,0 +1,43 @@
+{
+ "n": 72,
+ "mean_all": 41.34841207138797,
+ "complete": 2,
+ "partial": 48,
+ "none": 22,
+ "n_terr": 71,
+ "n_marine": 15,
+ "n_fresh": 32,
+ "n_mount": 13,
+ "total_kba_km2": 14809.425056113436,
+ "total_covered_km2": 8635.267436233538,
+ "foreign": [
+  {
+   "SitRecID": 31751,
+   "ISO3": "DZA",
+   "name": "El Kala - Tarf",
+   "overlap_with_TUN_km2": 9.982
+  },
+  {
+   "SitRecID": 6474,
+   "ISO3": "LBY",
+   "name": "Nefhusa",
+   "overlap_with_TUN_km2": 3.14
+  },
+  {
+   "SitRecID": 46639,
+   "ISO3": "DZA",
+   "name": "Ouenza Nord",
+   "overlap_with_TUN_km2": 2.572
+  },
+  {
+   "SitRecID": 45283,
+   "ISO3": "ITA",
+   "name": "Isole Pelagie",
+   "overlap_with_TUN_km2": 0.106
+  }
+ ],
+ "mean_terrestrial": 41.8502270280989,
+ "mean_marine": 32.07712433870882,
+ "mean_freshwater": 39.37520723622963,
+ "mean_mountain": 44.21908044337968
+}

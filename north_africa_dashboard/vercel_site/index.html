@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>North Africa 30×30</title>
+<meta name="description" content="GBF Headline Indicator 3.1 for Tunisia, Algeria, Morocco, Libya and Egypt: protected areas, OECMs, KBAs, ecosystems and reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Design tokens standing in for the dashboard runtime's theme. Layout: one centred column, max 1240px. */
+:root{
+  --color-bg:#f6f7f5; --color-panel:#ffffff; --color-fg:#1c2421; --color-fg-muted:#5d6a65; --color-border-line:#dde3df;
+  --color-ok:#1f7a4d; --color-warn:#9a6200; --color-bad:#b3261e;
+  --series-1:#2f7d62; --series-2:#c4862c; --series-3:#5b7fb8; --series-4:#b4613f; --series-5:#3d8fa6; --series-6:#8a6bb0; --series-7:#7c8a2e; --series-8:#a8517a;
+  --cds-chart-grid:#e8ece9; --cds-chart-axis:#9aa6a0; --cds-chart-reference:#5d6a65; --cds-chart-muted:#c3cbc6; --cds-chart-status-critical:#c0392b;
+  --cds-surface-popover:#ffffff; --cds-border:#dde3df; --cds-shadow-popover:0 4px 16px rgba(20,30,25,.12); --cds-text-secondary:#5d6a65;
+  --font-anthropic-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --font-anthropic-serif:"Source Serif 4",Georgia,serif;
+  --cds-font-size-caption:.8125rem; --cds-font-size-body:.9375rem; --cds-font-size-heading:1.0625rem; --cds-font-size-title:1.75rem; --cds-font-weight-medium:600;
+  --cds-gap-xs:.25rem; --cds-gap-sm:.5rem; --cds-gap-md:1rem; --cds-gap-lg:1.5rem; --cds-gap-xl:2rem;
+  --cds-pad-xs:.25rem; --cds-pad-sm:.5rem; --cds-pad-md:.875rem; --cds-pad-lg:1.125rem; --cds-pad-xl:1.5rem;
+  --cds-radius:8px; --cds-dur-slow:300ms; --cds-ease-out:cubic-bezier(.2,.8,.2,1);
+}
+@media (prefers-color-scheme: dark){ :root{
+  --color-bg:#121816; --color-panel:#1a2220; --color-fg:#e4ebe7; --color-fg-muted:#9eaca6; --color-border-line:#2c3733;
+  --color-ok:#6cc79a; --color-warn:#e3b45c; --color-bad:#f08a80;
+  --series-1:#5cc29a; --series-2:#e2aa52; --series-3:#8fb0e6; --series-4:#e08c66; --series-5:#6cc0d6; --series-6:#b79be0; --series-7:#b7c25a; --series-8:#de88ae;
+  --cds-chart-grid:#26302d; --cds-chart-axis:#5d6a65; --cds-chart-reference:#9eaca6; --cds-chart-muted:#44514c; --cds-chart-status-critical:#ef6f62;
+  --cds-surface-popover:#1f2926; --cds-border:#34413c; --cds-shadow-popover:0 4px 16px rgba(0,0,0,.4); --cds-text-secondary:#9eaca6; color-scheme:dark } }
+[hidden]{display:none!important}
+html,body{margin:0;background:var(--color-bg);color:var(--color-fg)}
+#dash-root{max-width:1240px;margin-inline:auto;padding-inline:max(16px,3vw);padding-block:28px 64px;box-sizing:border-box}
+.na-foot{margin-top:2rem;font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+
+
+/* Layout: tab bar over full-width pages; each page opens with figures, then a map beside its charts, then tables and the written report. */
+.na { --na-gap: var(--cds-gap-md); font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-lg); }
+.na h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.na h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+.na h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.na p { margin: 0; max-width: 72ch; line-height: 1.55; }
+.na .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.na .takeaway { color: var(--color-fg-muted); max-width: 80ch; }
+.na-head { display: grid; gap: var(--cds-gap-xs); }
+.na-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+.na-tabs button { font: inherit; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; }
+.na-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+.na-tabs button:focus-visible, .na-chip:focus-visible, .na th button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.na-page { display: grid; gap: var(--cds-gap-lg); }
+.na-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: var(--na-gap); }
+.na-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.na-kpi .v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.na-kpi .l { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.na-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--na-gap); }
+.na-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+.na-card.wide { grid-column: 1 / -1; }
+.na-chart { position: relative; min-width: 0; }
+.na-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.na-map { position: relative; min-height: 22rem; }
+.na-map svg { display: block; width: 100%; height: auto; touch-action: none; cursor: grab; }
+.na-map .land { stroke: var(--cds-chart-axis); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
+.na-map .sea { fill: var(--cds-chart-grid); stroke: none; }
+.na-map .country { cursor: pointer; }
+.na-map path { vector-effect: non-scaling-stroke; }
+.na-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); align-items: center; }
+.na-chip { font: inherit; font-size: var(--cds-font-size-caption); background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.na-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.na-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.na-legend span { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+.na-legend i { width: 0.75rem; height: 0.75rem; border-radius: 2px; display: inline-block; }
+.na-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); z-index: 3; max-width: 16rem; }
+.na-tip .t { color: var(--cds-text-secondary); }
+.na-tablebox { max-height: 26rem; overflow: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+.na table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.na th { position: sticky; top: 0; background: var(--color-panel); text-align: left; border-bottom: 1px solid var(--color-border-line); z-index: 1; }
+.na th button { font: inherit; font-weight: var(--cds-font-weight-medium); background: none; border: 0; color: var(--color-fg); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; text-align: left; width: 100%; }
+.na td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.na td.n, .na th.n button { text-align: right; }
+.na tr.pick { cursor: pointer; }
+.na tr.pick:hover td { background: var(--color-bg); }
+.na .bar { position: relative; display: inline-block; height: 0.5rem; width: 4rem; background: var(--cds-chart-grid); border-radius: 4px; vertical-align: middle; margin-right: var(--cds-gap-xs); overflow: hidden; }
+.na .bar b { position: absolute; inset: 0 auto 0 0; background: var(--na-bar, currentColor); border-radius: 4px; }
+.na input[type="search"], .na select { font: inherit; font-size: var(--cds-font-size-caption); background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+.na .pill { display: inline-block; font-size: var(--cds-font-size-caption); padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); }
+.na .pill.ok { color: var(--color-ok); } .na .pill.warn { color: var(--color-warn); } .na .pill.bad { color: var(--color-bad); }
+.na-report { display: grid; gap: var(--cds-gap-md); }
+.na-report section { display: grid; gap: var(--cds-gap-xs); }
+.na-report .scope { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); margin-top: var(--cds-gap-md); }
+.na a { color: inherit; }
+.na-facts { display: grid; grid-template-columns: max-content 1fr; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); }
+.na-facts dt { color: var(--color-fg-muted); } .na-facts dd { margin: 0; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+[data-dash-source-state=empty] { color: transparent; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="dash.js"></script>
+</head>
+<body>
+<div id="dash-root">
+
+
+<div class="na" id="na">
+  <header class="na-head" id="top">
+    <h1>North Africa 30×30</h1>
+    <p class="takeaway" id="takeaway" data-source="region"></p>
+  </header>
+
+  <nav class="na-tabs" role="tablist" aria-label="Dashboard pages">
+    <button role="tab" id="tab-overview" data-tab="overview" aria-selected="true">Overview</button>
+    <button role="tab" id="tab-country" data-tab="country" aria-selected="false">Country</button>
+    <button role="tab" id="tab-compare" data-tab="compare" aria-selected="false">Compare</button>
+    <button role="tab" id="tab-report" data-tab="report" aria-selected="false">Report</button>
+  </nav>
+
+  <!-- ===================== OVERVIEW ===================== -->
+  <section class="na-page" id="overview" data-page="overview">
+    <div class="na-kpis">
+      <div class="na-kpi"><span class="l">Region land covered, PAs + OECMs</span><span class="v" data-source="region" data-field="land_pct" data-row="0">—</span><span class="l">Indicator 3.1, five countries pooled</span></div>
+      <div class="na-kpi"><span class="l">Of which protected areas</span><span class="v" data-source="region" data-field="pa_pct" data-row="0">—</span><span class="l">Land, OECMs excluded</span></div>
+      <div class="na-kpi"><span class="l">Of which OECMs</span><span class="v" data-source="region" data-field="oecm_pct" data-row="0">—</span><span class="l">Algeria and Morocco only</span></div>
+      <div class="na-kpi"><span class="l">Region sea covered</span><span class="v" data-source="region" data-field="sea_pct" data-row="0">—</span><span class="l">Marine and coastal realm</span></div>
+      <div class="na-kpi"><span class="l">Sea still needed for 30%</span><span class="v" data-source="region" data-field="sea_needed_km2" data-row="0">—</span><span class="l">km², five countries pooled</span></div>
+      <div class="na-kpi"><span class="l">Average KBA coverage</span><span class="v" data-source="region" data-field="kba_mean_pct" data-row="0">—</span><span class="l">Mean % of each KBA covered</span></div>
+    </div>
+
+    <div class="na-grid">
+      <div class="na-card" id="card-regionmap">
+        <h2>Coverage by country</h2>
+        <p class="muted">Click a country to open its page. Shade shows the measure picked below.</p>
+        <div class="na-controls" id="metric-chips" role="group" aria-label="Map measure"></div>
+        <div class="na-map" id="regionmap" data-source="geo countries"></div>
+        <div class="na-legend" id="regionlegend"></div>
+      </div>
+      <div class="na-card" id="card-landbars">
+        <h2>Land and sea coverage against 30%</h2>
+        <p class="muted">Protected areas and OECMs (PA area removed), percent of each realm. Dashed line: 30% target.</p>
+        <div class="na-chart" id="landbars" data-source="countries"></div>
+        <div class="na-legend"><span><i id="lg-pa"></i>Protected areas</span><span><i id="lg-oe"></i>OECMs</span><span><i id="lg-sea"></i>Sea, PAs + OECMs</span></div>
+      </div>
+    </div>
+
+    <div class="na-card wide" id="card-countrytable">
+      <h2>Country comparison</h2>
+      <p class="muted">Click a row to open the country. Coverage after removing overlaps, Mollweide equal-area, WDPA/WD-OECM October 2026.</p>
+      <div class="na-tablebox">
+        <table id="countrytable" data-source="countries" data-row-key="iso3">
+          <thead><tr>
+            <th data-field="iso3"><button data-k="iso3">Code</button></th>
+            <th data-field="country"><button data-k="country">Country</button></th>
+            <th class="n" data-field="land_pct"><button data-k="land_pct">Land %</button></th>
+            <th class="n" data-field="land_pa_pct"><button data-k="land_pa_pct">PA only %</button></th>
+            <th class="n" data-field="land_oecm_pct"><button data-k="land_oecm_pct">OECM %</button></th>
+            <th class="n" data-field="sea_pct"><button data-k="sea_pct">Sea %</button></th>
+            <th class="n" data-field="land_needed_km2"><button data-k="land_needed_km2">Land needed km²</button></th>
+            <th class="n" data-field="sea_needed_km2"><button data-k="sea_needed_km2">Sea needed km²</button></th>
+            <th class="n" data-field="kba_mean_pct"><button data-k="kba_mean_pct">KBA mean %</button></th>
+            <th class="n" data-field="pp_land_pct"><button data-k="pp_land_pct">Protected Planet land %</button></th>
+            <th class="n" data-field="pp_sea_pct"><button data-k="pp_sea_pct">Protected Planet sea %</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="na-card wide" id="card-regionstory">
+      <h2>What the numbers say</h2>
+      <div class="na-report" id="regionstory" data-source="narratives"></div>
+    </div>
+  </section>
+
+  <!-- ===================== COUNTRY ===================== -->
+  <section class="na-page" id="country" data-page="country" hidden>
+    <div class="na-controls" id="country-chips" role="group" aria-label="Country"></div>
+    <div class="na-kpis" id="country-kpis">
+      <div class="na-kpi"><span class="l">Land covered, PAs + OECMs</span><span class="v ck" data-source="countries" data-field="land_pct">—</span><span class="l ckl" data-source="countries" data-field="land_km2"></span></div>
+      <div class="na-kpi"><span class="l">Protected areas, land</span><span class="v ck" data-source="countries" data-field="land_pa_pct">—</span><span class="l">percent of land</span></div>
+      <div class="na-kpi"><span class="l">OECMs, land</span><span class="v ck" data-source="countries" data-field="land_oecm_pct">—</span><span class="l">PA area removed</span></div>
+      <div class="na-kpi"><span class="l">Sea covered</span><span class="v ck" data-source="countries" data-field="sea_pct">—</span><span class="l ckl" data-source="countries" data-field="sea_km2"></span></div>
+      <div class="na-kpi"><span class="l">Land still needed for 30%</span><span class="v ck" data-source="countries" data-field="land_needed_km2">—</span><span class="l">km²</span></div>
+      <div class="na-kpi"><span class="l">Sea still needed for 30%</span><span class="v ck" data-source="countries" data-field="sea_needed_km2">—</span><span class="l">km²</span></div>
+      <div class="na-kpi"><span class="l">Average KBA coverage</span><span class="v ck" data-source="countries" data-field="kba_mean_pct">—</span><span class="l ckl" data-source="countries" data-field="kba_count"></span></div>
+      <div class="na-kpi"><span class="l">Lakes and wetlands covered</span><span class="v ck" data-source="countries" data-field="wetlands_pct">—</span><span class="l">GLWD v2</span></div>
+    </div>
+
+    <div class="na-grid">
+      <div class="na-card" id="card-countrymap">
+        <h2 id="countrymap-title">Map</h2>
+        <p class="muted">Scroll or pinch to zoom, drag to pan. Hover a KBA for its coverage.</p>
+        <div class="na-controls" id="layer-chips" role="group" aria-label="Map layers"></div>
+        <div class="na-map" id="countrymap" data-source="geo kbas"></div>
+        <div class="na-legend" id="countrylegend"></div>
+      </div>
+      <div class="na-card" id="card-facts">
+        <h2>Report</h2>
+        <dl class="na-facts" id="facts" data-source="countries"></dl>
+        <div class="na-report" id="countrystory" data-source="narratives"></div>
+      </div>
+    </div>
+
+    <div class="na-grid">
+      <div class="na-card" id="card-ts">
+        <h2>Coverage over time</h2>
+        <p class="muted">Cumulative coverage by designation year, from net (flattened) site areas. Steps hold until the next designation.</p>
+        <div class="na-chart" id="tschart" data-source="timeseries"></div>
+        <div class="na-legend" id="tslegend"></div>
+      </div>
+      <div class="na-card" id="card-eco">
+        <h2>Ecoregions</h2>
+        <p class="muted">Share of each ecoregion covered by PAs and OECMs. Dashed line: 30%.</p>
+        <div class="na-controls" id="realm-chips" role="group" aria-label="Realm"></div>
+        <div class="na-chart" id="ecochart" data-source="ecoregions"></div>
+      </div>
+      <div class="na-card" id="card-wet">
+        <h2>Lakes and wetlands</h2>
+        <p class="muted">GLWD v2 wetland groups on land, share inside PAs and OECMs.</p>
+        <div class="na-chart" id="wetchart" data-source="wetlands"></div>
+      </div>
+      <div class="na-card" id="card-gov">
+        <h2>Governance and effectiveness</h2>
+        <p class="muted">Share of covered land by IUCN governance type and by management-effectiveness evaluation (valid for 5 years).</p>
+        <div class="na-chart" id="govchart" data-source="governance effectiveness"></div>
+      </div>
+    </div>
+
+    <div class="na-card wide" id="card-kbatable">
+      <h2>Key Biodiversity Areas</h2>
+      <div class="na-controls">
+        <div class="na-controls" id="kba-chips" role="group" aria-label="KBA group"></div>
+        <input type="search" id="kba-search" placeholder="Search KBAs" aria-label="Search KBAs">
+      </div>
+      <p class="muted" id="kba-count"></p>
+      <div class="na-tablebox">
+        <table id="kbatable" data-source="kbas" data-row-key="sitrecid">
+          <thead><tr>
+            <th data-field="sitrecid"><button data-k="sitrecid">SitRecID</button></th>
+            <th data-field="kba"><button data-k="kba">KBA</button></th>
+            <th class="n" data-field="area_km2"><button data-k="area_km2">Area km²</button></th>
+            <th class="n" data-field="covered_pct"><button data-k="covered_pct">Covered %</button></th>
+            <th class="n" data-field="pa_only_pct"><button data-k="pa_only_pct">PA only %</button></th>
+            <th data-field="coverage_class"><button data-k="coverage_class">Class</button></th>
+            <th data-field="marine"><button data-k="marine">Marine</button></th>
+            <th data-field="freshwater"><button data-k="freshwater">Freshwater</button></th>
+            <th data-field="mountain"><button data-k="mountain">Mountain</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="na-card wide" id="card-sitetable">
+      <h2>Site register</h2>
+      <div class="na-controls">
+        <div class="na-controls" id="site-chips" role="group" aria-label="Site filter"></div>
+        <input type="search" id="site-search" placeholder="Search sites" aria-label="Search sites">
+      </div>
+      <p class="muted" id="site-count"></p>
+      <div class="na-tablebox">
+        <table id="sitetable" data-source="sites" data-row-key="site_id">
+          <thead><tr>
+            <th data-field="site_id"><button data-k="site_id">Site ID</button></th>
+            <th data-field="site"><button data-k="site">Name</button></th>
+            <th data-field="designation"><button data-k="designation">Designation</button></th>
+            <th data-field="site_type"><button data-k="site_type">Type</button></th>
+            <th class="n" data-field="year"><button data-k="year">Year</button></th>
+            <th data-field="counted"><button data-k="counted">Counted</button></th>
+            <th class="n" data-field="net_land_km2"><button data-k="net_land_km2">Net land km²</button></th>
+            <th class="n" data-field="net_sea_km2"><button data-k="net_sea_km2">Net sea km²</button></th>
+            <th data-field="governance"><button data-k="governance">Governance</button></th>
+            <th class="n" data-field="effectiveness_year"><button data-k="effectiveness_year">Last evaluation</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMPARE ===================== -->
+  <section class="na-page" id="compare" data-page="compare" hidden>
+    <div class="na-grid">
+      <div class="na-card" id="card-tsall">
+        <h2>Land coverage over time, all countries</h2>
+        <p class="muted">PAs + OECMs, cumulative by designation year.</p>
+        <div class="na-chart" id="tsall" data-source="timeseries"></div>
+      </div>
+      <div class="na-card" id="card-kbagroups">
+        <h2>KBA coverage by group</h2>
+        <p class="muted">Mean % covered: marine (SDG 14.5.1), freshwater and mountain (SDG 15.1.2, 15.4.1).</p>
+        <div class="na-chart" id="kbagroups" data-source="countries"></div>
+      </div>
+      <div class="na-card" id="card-inland">
+        <h2>Inland waters</h2>
+        <p class="muted">Share of river length and of lake and wetland area inside PAs and OECMs.</p>
+        <div class="na-chart" id="inland" data-source="countries"></div>
+      </div>
+      <div class="na-card" id="card-ppcheck">
+        <h2>Cross-check with Protected Planet</h2>
+        <p class="muted">Land coverage, PAs + OECMs: this analysis (filled) against Protected Planet, October 2026 (ring).</p>
+        <div class="na-chart" id="ppcheck" data-source="countries"></div>
+      </div>
+      <div class="na-card" id="card-dataq">
+        <h2>Data quality</h2>
+        <p class="muted">Share of covered land with no governance type reported, and with a current effectiveness evaluation.</p>
+        <div class="na-chart" id="dataq" data-source="countries"></div>
+      </div>
+      <div class="na-card" id="card-ecoall">
+        <h2>Least-covered ecoregions</h2>
+        <p class="muted">Land ecoregions over 5,000 km² in each country, lowest coverage first.</p>
+        <div class="na-chart" id="ecoall" data-source="ecoregions"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REPORT ===================== -->
+  <section class="na-page" id="report" data-page="report" hidden>
+    <div class="na-card wide" id="card-report">
+      <h2>North Africa 30×30 report</h2>
+      <p class="muted">Regional findings, then one section per country. Each country's full illustrated guide is linked at the end of its section.</p>
+      <div class="na-report" id="fullreport" data-source="narratives countries"></div>
+    </div>
+  </section>
+</div>
+
+
+<p class="na-foot">Data: WDPA/WD-OECM October 2026 (UNEP-WCMC &amp; IUCN), World Database of KBAs September 2026, RESOLVE Ecoregions 2017, MEOW, HydroRIVERS, GLWD v2. Analysis: GBF Indicator 3.1 workbooks for each country.</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

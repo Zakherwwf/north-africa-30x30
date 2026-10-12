@@ -1,0 +1,52 @@
+{
+ "n": 18,
+ "n_points_unmeasured": 0,
+ "points": [],
+ "pa_only": {
+  "mean": 0.3167392195007886,
+  "complete": 0,
+  "partial": 2,
+  "none": 16
+ },
+ "pa_oecm": {
+  "mean": 0.3167392195007886,
+  "complete": 0,
+  "partial": 2,
+  "none": 16
+ },
+ "total_kba_km2": 41885.13681248398,
+ "foreign": [
+  {
+   "SitRecID": 6183,
+   "ISO3": "DZA",
+   "name": "Parc National du Tassili N'Ajjer",
+   "overlap_km2": 551.861
+  },
+  {
+   "SitRecID": 46594,
+   "ISO3": "EGY",
+   "name": "Sallum area",
+   "overlap_km2": 39.029
+  }
+ ],
+ "terrestrial": {
+  "n": 17,
+  "mean_pa": 0.3353709382949526,
+  "mean_pa_oecm": 0.3353709382949526
+ },
+ "marine": {
+  "n": 7,
+  "mean_pa": 0.0,
+  "mean_pa_oecm": 0.0
+ },
+ "freshwater": {
+  "n": 0,
+  "mean_pa": NaN,
+  "mean_pa_oecm": NaN
+ },
+ "mountain": {
+  "n": 1,
+  "mean_pa": 2.8129105562657464,
+  "mean_pa_oecm": 2.8129105562657464
+ }
+}

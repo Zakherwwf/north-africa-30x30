@@ -1,0 +1,13 @@
+eco_id,eco_name,biome,extent_km2,pa_km2,oecm_km2
+79,Ethiopian montane grasslands and woodlands,Montane Grasslands & Shrublands,1.872753299491238e-12,0.0,0.0
+744,Nile Delta flooded savanna,Flooded Grasslands & Savannas,50860.757688641526,301.19985866401265,0.0
+745,Saharan halophytics,Flooded Grasslands & Savannas,20845.788338814964,2153.882729409458,0.0
+797,Mediterranean dry woodlands and steppe,"Mediterranean Forests, Woodlands & Scrub",3660.4979565452068,286.78836502677547,0.0
+809,Arabian desert,Deserts & Xeric Shrublands,47792.27177644178,3423.791869025351,0.0
+822,East Sahara Desert,Deserts & Xeric Shrublands,481467.7579169711,57213.49266544608,0.0
+830,Mesopotamian shrub desert,Deserts & Xeric Shrublands,3.088125038654474,0.0,0.0
+833,North Saharan Xeric Steppe and Woodland,Deserts & Xeric Shrublands,216992.08091891697,7268.162768375145,0.0
+836,Red Sea coastal desert,Deserts & Xeric Shrublands,38947.491282680756,7404.528261062599,0.0
+837,Red Sea-Arabian Desert shrublands,Deserts & Xeric Shrublands,9463.504314587959,5378.416279743082,0.0
+842,South Sahara desert,Deserts & Xeric Shrublands,113959.32304333555,26511.38660729305,0.0
+844,Tibesti-Jebel Uweinat montane xeric woodlands,Deserts & Xeric Shrublands,183.59784786107022,166.27560466861837,0.0

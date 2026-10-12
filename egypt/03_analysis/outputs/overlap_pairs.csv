@@ -1,0 +1,11 @@
+site_a,type_a,name_a,desig_a,site_b,type_b,name_b,desig_b,overlap_km2
+30006,PA,Wadi El Rayan,Multiple Use Management Area,555547985,PA,Wadi El Rayan Protected Area,Wetland of International Importance (Ramsar Site),1761.304
+14899,PA,Qarun,Multiple Use Management Area,555547984,PA,Lake Qarun Protected Area,Wetland of International Importance (Ramsar Site),1330.479
+17725,PA,Lake Burullus,Wetland of International Importance (Ramsar Site),306581,PA,El Bourollus,Multiple Use Management Area,354.143
+30006,PA,Wadi El Rayan,Multiple Use Management Area,902487,PA,Wadi Al-Hitan (Whale Valley),World Heritage Site (natural or mixed),179.671
+902487,PA,Wadi Al-Hitan (Whale Valley),World Heritage Site (natural or mixed),555547985,PA,Wadi El Rayan Protected Area,Wetland of International Importance (Ramsar Site),179.555
+312977,PA,Elba,Multiple Use Management Area,14895,PA,Wadi Al Alaqi,Multiple Use Management Area,21.382
+306589,PA,Wadi El-Gemal - Hamata,National Park,306586,PA,Tourism Development Area II,Multiple Use Management Area,6.75
+306589,PA,Wadi El-Gemal - Hamata,National Park,306585,PA,Tourism Development Area I,Multiple Use Management Area,3.755
+12363,PA,St. Catherine,Protected Landscape,40977,PA,Nabq,Multiple Use Management Area,0.409
+9782,PA,Ras Mohammed,National Park,12363,PA,St. Catherine,Protected Landscape,0.119

@@ -1,0 +1,58 @@
+{
+ "n": 33,
+ "n_points_unmeasured": 0,
+ "points": [],
+ "pa_only": {
+  "mean": 35.236660070650956,
+  "complete": 8,
+  "partial": 10,
+  "none": 15
+ },
+ "pa_oecm": {
+  "mean": 35.236660070650956,
+  "complete": 8,
+  "partial": 10,
+  "none": 15
+ },
+ "total_kba_km2": 35495.28271358905,
+ "foreign": [
+  {
+   "SitRecID": 8182,
+   "ISO3": "ISR",
+   "name": "Western Negev",
+   "overlap_km2": 20.081
+  },
+  {
+   "SitRecID": 8185,
+   "ISO3": "ISR",
+   "name": "Southern Arava valley and Elat mountains",
+   "overlap_km2": 4.973
+  },
+  {
+   "SitRecID": 6202,
+   "ISO3": "SAU",
+   "name": "Tiran island",
+   "overlap_km2": 62.108
+  }
+ ],
+ "terrestrial": {
+  "n": 31,
+  "mean_pa": 32.73387858876427,
+  "mean_pa_oecm": 32.73387858876427
+ },
+ "marine": {
+  "n": 13,
+  "mean_pa": 52.34883409667552,
+  "mean_pa_oecm": 52.34883409667552
+ },
+ "freshwater": {
+  "n": 11,
+  "mean_pa": 26.335312820704953,
+  "mean_pa_oecm": 26.335312820704953
+ },
+ "mountain": {
+  "n": 7,
+  "mean_pa": 39.952702536768655,
+  "mean_pa_oecm": 39.952702536768655
+ }
+}

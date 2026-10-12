@@ -1,0 +1,70 @@
+site_a,name_a,desig_a,site_b,name_b,desig_b,overlap_km2
+101835,Chott Jrid,Wetland Zone of National Importance,903073,Chott Jrid,Wetland of International Importance (Ramsar Site),4998.166
+555624277,Lagune de Boughrara,Wetland of International Importance (Ramsar Site),555624278,Lagune de Boughrara,Wetland Zone of National Importance,370.119
+15187,Sebkhat Sidi El Heni,Wetland Zone of National Importance,555624292,Sebkhat Sidi El Heni,Wetland of International Importance (Ramsar Site),365.518
+32564,Bahiret El Bibane,Wetland Zone of National Importance,903071,Bahiret El Bibane,Wetland of International Importance (Ramsar Site),311.649
+903085,Sebkhat Noual,Wetland of International Importance (Ramsar Site),555624291,Sebkhat Noual,Wetland Zone of National Importance,148.567
+17719,Ichkeul,Wetland of International Importance (Ramsar Site),555624267,Ichkeul,Wetland Zone of National Importance,126.324
+941,Ichkeul,National Park,555624267,Ichkeul,Wetland Zone of National Importance,125.811
+941,Ichkeul,National Park,17719,Ichkeul,Wetland of International Importance (Ramsar Site),125.811
+941,Ichkeul,National Park,4322,Ichkeul National Park,World Heritage Site (natural or mixed),123.899
+903074,Jerba Bin El Ouediane,Wetland of International Importance (Ramsar Site),555624272,Jerba Bin El Ouediane,Wetland Zone of National Importance,118.008
+555624267,Ichkeul,Wetland Zone of National Importance,4322,Ichkeul National Park,World Heritage Site (natural or mixed),112.85
+17719,Ichkeul,Wetland of International Importance (Ramsar Site),4322,Ichkeul National Park,World Heritage Site (natural or mixed),112.85
+903084,Sebkhat Kelbia,Wetland of International Importance (Ramsar Site),15185,Sebkhat Kelbia,Wetland Zone of National Importance,85.803
+555558449,Complexe des zones humides de Sebkhet Oum Ez-Zessar et Sbkkhet El Grine,Wetland of International Importance (Ramsar Site),555624246,Complexe des zones humides de Sebkhet Oum Ez-Zessar et Sbkkhet El Grine,Wetland Zone of National Importance,79.264
+903070,Ain Dahab,Wetland of International Importance (Ramsar Site),555624231,Ain Dahab,Wetland Zone of National Importance,70.528
+32563,Kneiss iles,Wetland Zone of National Importance,15198,iles Kneiss,Nature Reserve,59.426
+32563,Kneiss iles,Wetland Zone of National Importance,903078,Kneiss iles,Wetland of International Importance (Ramsar Site),59.426
+32563,Kneiss iles,Wetland Zone of National Importance,365018,Kneiss iles,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),59.426
+15198,iles Kneiss,Nature Reserve,365018,Kneiss iles,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),59.426
+15198,iles Kneiss,Nature Reserve,903078,Kneiss iles,Wetland of International Importance (Ramsar Site),59.426
+365018,Kneiss iles,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),903078,Kneiss iles,Wetland of International Importance (Ramsar Site),59.426
+555543081,Oued Dkouk,Wetland of International Importance (Ramsar Site),555624286,Oued Dkouk,Nature Reserve,57.686
+555543081,Oued Dkouk,Wetland of International Importance (Ramsar Site),555624287,Oued Dkouk,Wetland Zone of National Importance,57.686
+555624286,Oued Dkouk,Nature Reserve,555624287,Oued Dkouk,Wetland Zone of National Importance,57.686
+903080,Lagune de Ghar El Melh et delta de la medjerda,Wetland of International Importance (Ramsar Site),555624279,Lagune de Ghar El Melh et delta de la medjerda,Wetland Zone of National Importance,38.918
+555543076,Chott EL Guetar,Wetland of International Importance (Ramsar Site),555624244,Chott EL Guetar,Wetland Zone of National Importance,38.16
+555558450,Complexe lac de Tunis,Wetland of International Importance (Ramsar Site),555624248,Complexe lac de Tunis,Wetland Zone of National Importance,35.509
+555543070,Barrage Sidi El Barrak,Wetland of International Importance (Ramsar Site),555624241,Barrage Sidi El Barrak,Wetland Zone of National Importance,34.162
+555543078,Sebkhat de l'archipel de Kerkennah,Wetland of International Importance (Ramsar Site),555624290,Sebkhat de l'archipel de Kerkennah,Wetland Zone of National Importance,30.363
+903088,Zones humides oasiennes de Kebili,Wetland of International Importance (Ramsar Site),555624299,Zones humides oasiennes de Kebili,Wetland Zone of National Importance,27.401
+555624255,Dj. Saddine,Wetland Zone of National Importance,555624256,Dj. Saddine,Wetland of International Importance (Ramsar Site),26.074
+555624254,Dj. Saddine,Nature Reserve,555624256,Dj. Saddine,Wetland of International Importance (Ramsar Site),26.074
+555624254,Dj. Saddine,Nature Reserve,555624255,Dj. Saddine,Wetland Zone of National Importance,26.074
+903086,Sebkhet Sejoumi,Wetland of International Importance (Ramsar Site),555624295,Sebkhet Sejoumi,Wetland Zone of National Importance,24.079
+903075,Jerba Guellala,Wetland of International Importance (Ramsar Site),555624273,Jerba Guellala,Wetland Zone of National Importance,23.29
+903077,Gareat Sidi Mansour,Wetland of International Importance (Ramsar Site),555624265,Gareat Sidi Mansour,Wetland Zone of National Importance,20.605
+903076,Jerba Ras Rmel,Wetland of International Importance (Ramsar Site),555624274,Jerba Ras Rmel,Wetland Zone of National Importance,18.53
+555543071,Barrage Sidi Saad,Wetland of International Importance (Ramsar Site),555624242,Barrage Sidi Saad,Wetland Zone of National Importance,18.005
+15197,Salines de Thyna,Wetland Zone of National Importance,903083,Salines de Thyna,Wetland of International Importance (Ramsar Site),16.882
+555543080,Marais d'eau douce Garaet Douza,Wetland of International Importance (Ramsar Site),555624282,Marais d'eau douce Garaet Douza,Wetland Zone of National Importance,14.489
+555547400,Sebkhet Halk El Manzel et Oued Essed,Wetland of International Importance (Ramsar Site),555624294,Sebkhet Halk El Manzel et Oued Essed,Wetland Zone of National Importance,10.662
+32564,Bahiret El Bibane,Wetland Zone of National Importance,12388,Hamada-Sidi Toui,Reserve,9.775
+12388,Hamada-Sidi Toui,Reserve,903071,Bahiret El Bibane,Wetland of International Importance (Ramsar Site),9.775
+555543082,Les Salines de Monastir,Wetland of International Importance (Ramsar Site),555624281,Les Salines de Monastir,Wetland Zone of National Importance,9.48
+555543074,Barrage oued Errmal,Wetland of International Importance (Ramsar Site),555624239,Barrage oued Errmal,Wetland Zone of National Importance,8.529
+555543072,Barrage Merguellil - El Houareb,Wetland of International Importance (Ramsar Site),555624236,Barrage Merguellil - El Houareb,Wetland Zone of National Importance,8.2
+555555578,Complexe des zones humides des Chott El Guetayate et Sebkhet Dhreia et oued Akarit Rekhama et Melah,Wetland of International Importance (Ramsar Site),555624247,Complexe des zones humides des Chott El Guetayate et Sebkhet Dhreia et oued Akarit Rekhama et Melah,Wetland Zone of National Importance,8.076
+555624234,La Galite,Nature Reserve,109053,Archipel De La Galite,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),8.01
+555543079,Thelja,Wetland of International Importance (Ramsar Site),555624297,Thelja,Wetland Zone of National Importance,6.772
+555624296,Thelja,Nature Reserve,555624297,Thelja,Wetland Zone of National Importance,6.772
+555543079,Thelja,Wetland of International Importance (Ramsar Site),555624296,Thelja,Nature Reserve,6.772
+903072,Barrage Lebna,Wetland of International Importance (Ramsar Site),555624235,Barrage Lebna,Wetland Zone of National Importance,6.706
+903081,Lagunes du Cap Bon oriental,Wetland of International Importance (Ramsar Site),555624280,Lagunes du Cap Bon oriental,Wetland Zone of National Importance,5.052
+903087,Sebkhat Soliman,Wetland of International Importance (Ramsar Site),555624293,Sebkhat Soliman,Wetland Zone of National Importance,2.924
+101835,Chott Jrid,Wetland Zone of National Importance,555624249,Dghoumes,National Park,2.615
+903073,Chott Jrid,Wetland of International Importance (Ramsar Site),555624249,Dghoumes,National Park,2.615
+555558448,Complexe des zones humides de barrage Ghédir El Golla et barrage El Mornaguia,Wetland of International Importance (Ramsar Site),555624245,Complexe des zones humides de barrage Ghédir El Golla et barrage El Mornaguia,Wetland Zone of National Importance,1.595
+555543073,Barrage oued El Hjar,Wetland of International Importance (Ramsar Site),555624238,Barrage oued El Hjar,Wetland Zone of National Importance,1.561
+555555574,Barrage Mlaabi,Wetland of International Importance (Ramsar Site),555624237,Barrage Mlaabi,Wetland Zone of National Importance,0.846
+942,Zembra and Zembretta Iles,National Park,365017,Zembra et Zembretta,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),0.679
+555543075,Barrage Sidi Abdelmoneem,Wetland of International Importance (Ramsar Site),555624240,Barrage Sidi Abdelmoneem,Wetland Zone of National Importance,0.259
+555624263,Djebel Touati,Nature Reserve,555543071,Barrage Sidi Saad,Wetland of International Importance (Ramsar Site),0.102
+555624263,Djebel Touati,Nature Reserve,555624242,Barrage Sidi Saad,Wetland Zone of National Importance,0.102
+101839,Tourbiere Dar Fatma,Nature Reserve,903082,Tourbiere Dar Fatma,Wetland of International Importance (Ramsar Site),0.098
+101839,Tourbiere Dar Fatma,Nature Reserve,555624298,Tourbiere Dar Fatma,Wetland Zone of National Importance,0.098
+903082,Tourbiere Dar Fatma,Wetland of International Importance (Ramsar Site),555624298,Tourbiere Dar Fatma,Wetland Zone of National Importance,0.098
+903079,Mejen Djebel Chitane - lac et tourbière,Wetland of International Importance (Ramsar Site),555624283,Mejen Djebel Chitane,Nature Reserve,0.059
+903079,Mejen Djebel Chitane - lac et tourbière,Wetland of International Importance (Ramsar Site),555624284,Mejen Djebel Chitane - lac et tourbière,Wetland Zone of National Importance,0.059
+555624283,Mejen Djebel Chitane,Nature Reserve,555624284,Mejen Djebel Chitane - lac et tourbière,Wetland Zone of National Importance,0.059

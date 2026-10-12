@@ -1,0 +1,26 @@
+{
+ "iso3": "LBY",
+ "name": "Libya",
+ "reporting_year": 2026,
+ "wdpa_release": "WDPA/WD-OECM October 2026 (Protected Planet; UNEP-WCMC map service)",
+ "timeseries_start": 1970,
+ "global_sources": {
+  "ecoregions_zip": "../../../tunisia/01_data/ecoregions/_global_download/Ecoregions2017.zip",
+  "hydrorivers_zip": "../../../tunisia/01_data/inland_waters/_global_download/HydroRIVERS_v10_af_shp.zip",
+  "glwd_zip": "../../../tunisia/01_data/inland_waters/_global_download/GLWD_v2_0_area_by_class_ha_tif.zip",
+  "gmba_zip": "../../../tunisia/01_data/mountains/_global_download/GMBA_Inventory_v2.0_standard_basic.zip",
+  "kba_global_polygons": "../../../KBAs/KBA_Data/KBAsGlobal_2026_September_02_POL.shp"
+ },
+ "pame_transfer": {},
+ "biome_crosswalk": {
+  "Temperate Conifer Forests": "T2",
+  "Mediterranean Forests, Woodlands & Scrub": "T3",
+  "Deserts & Xeric Shrublands": "T5",
+  "Flooded Grasslands & Savannas": "T5",
+  "Montane Grasslands & Shrublands": "T4",
+  "Temperate Broadleaf & Mixed Forests": "T2",
+  "Tropical & Subtropical Grasslands, Savannas & Shrublands": "T4"
+ },
+ "pame_transfer_note": "No GD-PAME evaluations recorded for Libya.",
+ "boundary_note": "Land = geoBoundaries LBY ADM0; sea = Marine Regions EEZ v12 'Libyan Exclusive Economic Zone' (the Egypt/Libya overlapping-claim zone, 8,114 km², is kept for reference and not counted), as in Protected Planet."
+}

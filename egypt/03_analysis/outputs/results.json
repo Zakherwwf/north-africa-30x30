@@ -1,0 +1,25 @@
+{
+ "land_km2": 986014.2525588032,
+ "marine_km2": 243974.15503170333,
+ "gross_pa_terr": 114426.10329938152,
+ "gross_pa_mar": 8837.71601107174,
+ "gross_oecm_terr": 0.0,
+ "gross_oecm_mar": 0.0,
+ "flat_pa_terr": 110805.44127426209,
+ "flat_pa_mar": 8821.167844036869,
+ "flat_oecm_terr": 0.0,
+ "flat_oecm_mar": 0.0,
+ "overlap_pairs": 10,
+ "rivers_km": 226820.28710170742,
+ "rivers_in_pa_km": 24029.043901247675,
+ "rivers_in_oecm_km": 0.0,
+ "n_records": 50,
+ "n_included": 35,
+ "n_pa_included": 35,
+ "n_oecm_included": 0,
+ "excluded": {
+  "": 35,
+  "STATUS = Proposed": 13,
+  "UNESCO-MAB Biosphere Reserve": 2
+ }
+}

@@ -1,0 +1,10 @@
+eco_id,eco_name,biome,extent_km2,pa_km2,oecm_km2
+745,Saharan halophytics,Flooded Grasslands & Savannas,2280.2631589369003,0.0,0.0
+797,Mediterranean dry woodlands and steppe,"Mediterranean Forests, Woodlands & Scrub",51381.536820840054,1758.2811264868103,0.0
+798,Mediterranean woodlands and forests,"Mediterranean Forests, Woodlands & Scrub",12585.8062552485,320.29784021855744,0.0
+822,East Sahara Desert,Deserts & Xeric Shrublands,888433.978688747,0.0,0.0
+833,North Saharan Xeric Steppe and Woodland,Deserts & Xeric Shrublands,604390.0473157701,0.0,0.0
+842,South Sahara desert,Deserts & Xeric Shrublands,41846.211823729514,0.0,0.0
+844,Tibesti-Jebel Uweinat montane xeric woodlands,Deserts & Xeric Shrublands,8579.606787379984,0.0,0.0
+845,West Sahara desert,Deserts & Xeric Shrublands,17015.17701583863,0.0,0.0
+846,West Saharan montane xeric woodlands,Deserts & Xeric Shrublands,2582.8755561798957,0.0,0.0

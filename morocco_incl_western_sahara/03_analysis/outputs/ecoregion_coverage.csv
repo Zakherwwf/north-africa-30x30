@@ -1,0 +1,10 @@
+eco_id,eco_name,biome,extent_km2,pa_km2,oecm_km2
+701,Mediterranean conifer and mixed forests,Temperate Conifer Forests,10979.513435740882,2106.2214169467006,1555.859802025119
+745,Saharan halophytics,Flooded Grasslands & Savannas,359.6366043206783,0.0,0.0
+758,Mediterranean High Atlas juniper steppe,Montane Grasslands & Shrublands,6346.702822392729,532.7749582039476,1369.1397585395816
+796,Mediterranean Acacia-Argania dry woodlands and succulent thickets,"Mediterranean Forests, Woodlands & Scrub",97616.69150119612,2013.9491586635177,17839.08219460134
+797,Mediterranean dry woodlands and steppe,"Mediterranean Forests, Woodlands & Scrub",64841.9544388377,20.82686570045929,43956.96351273036
+798,Mediterranean woodlands and forests,"Mediterranean Forests, Woodlands & Scrub",145990.47356299334,1857.5778892158608,19831.403960159183
+833,North Saharan Xeric Steppe and Woodland,Deserts & Xeric Shrublands,239529.94239904825,2261.416793713363,46448.761296884506
+839,Saharan Atlantic coastal desert,Deserts & Xeric Shrublands,22772.374300040698,0.0,0.0
+842,South Sahara desert,Deserts & Xeric Shrublands,96372.82668028369,0.0,0.0

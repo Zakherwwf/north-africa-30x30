@@ -1,0 +1,26 @@
+site_a,type_a,name_a,desig_a,site_b,type_b,name_b,desig_b,overlap_km2
+4999,PA,Tassili n'Ajjer,World Heritage Site (natural or mixed),12352,OECM,Tassili N'Ajjer,Cultural Park,75469.558
+901230,PA,Oasis de Moghrar et de Tiout,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,1925.116
+900577,PA,Oasis de Tamantit et Sid Ahmed Timmi,Wetland of International Importance (Ramsar Site),555705343,OECM,Touat-Gourara-Tidikelt,Cultural Park,1021.708
+900572,PA,Oasis d'Ouled Saïd,Wetland of International Importance (Ramsar Site),555705343,OECM,Touat-Gourara-Tidikelt,Cultural Park,656.68
+4999,PA,Tassili n'Ajjer,World Heritage Site (natural or mixed),900571,PA,Vallée d'Iherir,Wetland of International Importance (Ramsar Site),581.395
+900571,PA,Vallée d'Iherir,Wetland of International Importance (Ramsar Site),12352,OECM,Tassili N'Ajjer,Cultural Park,581.395
+901224,PA,Chott Zahrez Gharbi,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,525.293
+901223,PA,Chott Zahrez Chergui,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,511.426
+900579,PA,Chott el Hodna,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,348.26
+900573,PA,Gueltates d'Issakarassène,Wetland of International Importance (Ramsar Site),23177,OECM,Ahaggar,Cultural Park,342.573
+902850,PA,Oglat Ed Daïra,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,209.203
+901227,PA,Gueltates Afilal,Wetland of International Importance (Ramsar Site),23177,OECM,Ahaggar,Cultural Park,193.481
+4999,PA,Tassili n'Ajjer,World Heritage Site (natural or mixed),23177,OECM,Ahaggar,Cultural Park,151.378
+900580,PA,Chott ech Chergui,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,60.643
+9741,PA,El Kala,National Park,67756,PA,Réserve Intégrale du Lac Tonga,Wetland of International Importance (Ramsar Site),52.726
+9741,PA,El Kala,National Park,17706,PA,Réserve Intégrale du Lac Oubeïra,Wetland of International Importance (Ramsar Site),24.096
+9741,PA,El Kala,National Park,902851,PA,Réserve Intégrale du Lac Mellah,Wetland of International Importance (Ramsar Site),20.22
+19571,PA,Réserve Naturelle Marine des Iles Habibas,Marine Nature Reserve,555599909,PA,Les îles Habibas,Specially Protected Areas of Mediterranean Importance (Barcelona Convention),17.202
+9741,PA,El Kala,National Park,555542679,PA,Marais de Bourdim,Wetland of International Importance (Ramsar Site),4.477
+9741,PA,El Kala,National Park,901222,PA,Aulnaie de Aïn Khiar,Wetland of International Importance (Ramsar Site),1.673
+101170,PA,Tlemcen,National Park,901226,PA,Grotte karstique de Ghar Boumâaza,Wetland of International Importance (Ramsar Site),1.124
+901229,PA,Cirque de Aïn Ouarka,Wetland of International Importance (Ramsar Site),555705341,OECM,Atlas Saharien,Cultural Park,0.953
+9741,PA,El Kala,National Park,901234,PA,Tourbière du Lac Noir,Wetland of International Importance (Ramsar Site),0.097
+902847,PA,Garaet Guellif,Wetland of International Importance (Ramsar Site),555542677,PA,Garaet Timerganine,Wetland of International Importance (Ramsar Site),0.04
+12352,OECM,Tassili N'Ajjer,Cultural Park,23177,OECM,Ahaggar,Cultural Park,0.011

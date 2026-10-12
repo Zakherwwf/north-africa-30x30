@@ -1,0 +1,30 @@
+{
+ "iso3": "EGY",
+ "name": "Egypt",
+ "reporting_year": 2026,
+ "wdpa_release": "WDPA/WD-OECM October 2026 (Protected Planet; UNEP-WCMC map service)",
+ "timeseries_start": 1975,
+ "global_sources": {
+  "ecoregions_zip": "../../../tunisia/01_data/ecoregions/_global_download/Ecoregions2017.zip",
+  "hydrorivers_zip": "../../../tunisia/01_data/inland_waters/_global_download/HydroRIVERS_v10_af_shp.zip",
+  "glwd_zip": "../../../tunisia/01_data/inland_waters/_global_download/GLWD_v2_0_area_by_class_ha_tif.zip",
+  "gmba_zip": "../../../tunisia/01_data/mountains/_global_download/GMBA_Inventory_v2.0_standard_basic.zip",
+  "kba_global_polygons": "../../../KBAs/KBA_Data/KBAsGlobal_2026_September_02_POL.shp"
+ },
+ "pame_transfer": {
+  "3020": 12359,
+  "61414": 14895,
+  "555547985": 30006
+ },
+ "biome_crosswalk": {
+  "Temperate Conifer Forests": "T2",
+  "Mediterranean Forests, Woodlands & Scrub": "T3",
+  "Deserts & Xeric Shrublands": "T5",
+  "Flooded Grasslands & Savannas": "T5",
+  "Montane Grasslands & Shrublands": "T4",
+  "Temperate Broadleaf & Mixed Forests": "T2",
+  "Tropical & Subtropical Grasslands, Savannas & Shrublands": "T4"
+ },
+ "pame_transfer_note": "BREMi evaluations of the Omayed and Wadi Allaqi biosphere reserves moved to El Omayed (12359) and Wadi Al Alaqi (14895); IBA monitoring of the Wadi El Rayan Ramsar site moved to Wadi El Rayan protected area (30006), the same physical site. The Wadi Al-Hitan World Heritage Outlook stays on its record: the site is only part of Wadi El Rayan.",
+ "boundary_note": "Land = geoBoundaries EGY ADM0 minus the Halaib Triangle (overlap with geoBoundaries SDN, 18,042 km²); sea = Marine Regions EEZ v12 'Egyptian EEZ' (Halaib and Egypt/Libya overlapping-claim waters not counted), as in Protected Planet. KBA Gebel Elba (entirely in Halaib) set aside."
+}

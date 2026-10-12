@@ -1,0 +1,29 @@
+{
+ "iso3": "MAR",
+ "name": "Morocco",
+ "reporting_year": 2026,
+ "wdpa_release": "WDPA/WD-OECM October 2026 (Protected Planet; UNEP-WCMC map service)",
+ "timeseries_start": 1940,
+ "global_sources": {
+  "ecoregions_zip": "../../../tunisia/01_data/ecoregions/_global_download/Ecoregions2017.zip",
+  "hydrorivers_zip": "../../../tunisia/01_data/inland_waters/_global_download/HydroRIVERS_v10_af_shp.zip",
+  "glwd_zip": "../../../tunisia/01_data/inland_waters/_global_download/GLWD_v2_0_area_by_class_ha_tif.zip",
+  "gmba_zip": "../../../tunisia/01_data/mountains/_global_download/GMBA_Inventory_v2.0_standard_basic.zip",
+  "kba_global_polygons": "../../../KBAs/KBA_Data/KBAsGlobal_2026_September_02_POL.shp"
+ },
+ "pame_transfer": {
+  "555547509": 29969
+ },
+ "biome_crosswalk": {
+  "Temperate Conifer Forests": "T2",
+  "Mediterranean Forests, Woodlands & Scrub": "T3",
+  "Deserts & Xeric Shrublands": "T5",
+  "Flooded Grasslands & Savannas": "T5",
+  "Montane Grasslands & Shrublands": "T4",
+  "Temperate Broadleaf & Mixed Forests": "T2",
+  "Tropical & Subtropical Grasslands, Savannas & Shrublands": "T4"
+ },
+ "pame_transfer_note": "Al-Hoceima SPAMI (2009) IMET 2018 evaluation moved to Al Hoceima National Park (29969, 2004), which holds the area of the same park. The BREMi 2013 evaluation of the Oasis du Sud Marocain Biosphere Reserve stays on its excluded record: it matches no single national park.",
+ "boundary_note": "Land = geoBoundaries MAR ADM0 including Western Sahara (no cut at 27°40'N); sea = Marine Regions EEZ v12 'Moroccan EEZ' plus the 'Overlapping claim Western Sahara' zone. All 70 KBAs listed under Morocco in the World Database of KBAs are counted, including the six south of 27°40'N. This differs from Protected Planet, which reports Morocco without Western Sahara.",
+ "boundary_variant": "incl_western_sahara"
+}

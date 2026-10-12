@@ -1,0 +1,34 @@
+class_id,class_name,group,counted,extent_km2,pa_km2,oecm_km2,pa_pct,pa_oecm_pct
+1,Freshwater lake,Lakes and reservoirs,Y,34.015320000424985,0.0,0.0,0.0,0.0
+2,Saline lake,Lakes and reservoirs,Y,298.04459998743056,0.0,0.0,0.0,0.0
+3,Reservoir,Lakes and reservoirs,Y,1.8070000000000002,0.8390000000000001,0.0,46.43054786939679,46.43054786939679
+4,Large river,River channels (counted as river length),N,0.0,0.0,0.0,,
+5,Large estuarine river,River channels (counted as river length),N,0.0,0.0,0.0,,
+6,Other permanent waterbody,Lakes and reservoirs,Y,471.4556001111754,14.044920007746663,0.0,2.979054656352515,2.979054656352515
+7,Small streams,River channels (counted as river length),N,213.49341000052914,1.0001399999205023,0.0,0.46846410852589004,0.46846410852589004
+8,"Lacustrine, forested",Lacustrine wetlands,Y,0.0,0.0,0.0,,
+9,"Lacustrine, non-forested",Lacustrine wetlands,Y,12.155600000679492,0.94,0.0,7.733061304645221,7.733061304645221
+10,"Riverine, regularly flooded, forested",Riverine wetlands,Y,0.0,0.0,0.0,,
+11,"Riverine, regularly flooded, non-forested",Riverine wetlands,Y,1.5888600001335142,0.6932600001245737,0.0,43.63254157485984,43.63254157485984
+12,"Riverine, seasonally flooded, forested",Riverine wetlands,Y,0.092,0.0,0.0,0.0,0.0
+13,"Riverine, seasonally flooded, non-forested",Riverine wetlands,Y,618.4406199963167,0.9068000001907349,0.0,0.146626849995095,0.146626849995095
+14,"Riverine, seasonally saturated, forested",Riverine wetlands,Y,0.05045999991893768,0.0,0.0,0.0,0.0
+15,"Riverine, seasonally saturated, non-forested",Riverine wetlands,Y,148.2787800051607,0.8238099999539554,0.0,0.5555818573131527,0.5555818573131527
+16,"Palustrine, regularly flooded, forested",Palustrine wetlands,Y,0.01618000003695488,0.0006600000262260437,0.0,4.079110165133581,4.079110165133581
+17,"Palustrine, regularly flooded, non-forested",Palustrine wetlands,Y,6.998699999660253,0.2714000000357628,0.0,3.877863032405129,3.877863032405129
+18,"Palustrine, seasonally saturated, forested",Palustrine wetlands,Y,0.012079999923706055,0.0,0.0,0.0,0.0
+19,"Palustrine, seasonally saturated, non-forested",Palustrine wetlands,Y,10.156280000371858,0.3732899991869927,0.0,3.6754599043480995,3.6754599043480995
+20,"Ephemeral, forested",Ephemeral wetlands,Y,0.0,0.0,0.0,,
+21,"Ephemeral, non-forested",Ephemeral wetlands,Y,83.91288000062109,1.5874800002425908,0.0,1.8918192299332843,1.8918192299332843
+22,"Arctic/boreal peatland, forested",Peatlands,Y,0.0,0.0,0.0,,
+23,"Arctic/boreal peatland, non-forested",Peatlands,Y,0.0,0.0,0.0,,
+24,"Temperate peatland, forested",Peatlands,Y,0.0,0.0,0.0,,
+25,"Temperate peatland, non-forested",Peatlands,Y,0.0,0.0,0.0,,
+26,"Tropical/subtropical peatland, forested",Peatlands,Y,0.0,0.0,0.0,,
+27,"Tropical/subtropical peatland, non-forested",Peatlands,Y,0.0,0.0,0.0,,
+28,Mangrove,Coastal wetlands,Y,0.0,0.0,0.0,,
+29,Saltmarsh,Coastal wetlands,Y,2.0641300008296968,0.0,0.0,0.0,0.0
+30,Large river delta,Coastal wetlands,Y,0.0,0.0,0.0,,
+31,Other coastal wetland,Coastal wetlands,Y,191.0013600032106,2.5116600012164563,0.0,1.3149958728954794,1.3149958728954794
+32,"Salt pan, saline/brackish wetland",Salt pans and saline wetlands,Y,4997.131140026022,0.0,0.0,0.0,0.0
+33,Rice paddies,"Rice paddies (anthropogenic, excluded)",N,0.0,0.0,0.0,,

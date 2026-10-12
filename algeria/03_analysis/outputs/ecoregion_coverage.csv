@@ -1,0 +1,11 @@
+eco_id,eco_name,biome,extent_km2,pa_km2,oecm_km2
+53,Sahelian Acacia savanna,"Tropical & Subtropical Grasslands, Savannas & Shrublands",33435.13447353352,0.0,33429.14283871051
+701,Mediterranean conifer and mixed forests,Temperate Conifer Forests,9441.606238065424,807.0250809119982,0.0
+745,Saharan halophytics,Flooded Grasslands & Savannas,14404.459190765796,7300.168980681507,4624.137320824225
+797,Mediterranean dry woodlands and steppe,"Mediterranean Forests, Woodlands & Scrub",157839.45598228817,9947.189986919542,77142.48426385598
+798,Mediterranean woodlands and forests,"Mediterranean Forests, Woodlands & Scrub",135145.8991203612,10176.622299810455,7749.704021681934
+822,East Sahara Desert,Deserts & Xeric Shrublands,46288.63857884214,10101.39836849145,36092.05444217076
+833,North Saharan Xeric Steppe and Woodland,Deserts & Xeric Shrublands,468655.41554397036,15072.47943893681,110109.92209400563
+842,South Sahara desert,Deserts & Xeric Shrublands,543078.5241059773,0.0,421306.2557330867
+845,West Sahara desert,Deserts & Xeric Shrublands,714478.014192832,1846.4082530029038,319087.9444957958
+846,West Saharan montane xeric woodlands,Deserts & Xeric Shrublands,195836.67572583928,52510.22598097648,142154.70188335137

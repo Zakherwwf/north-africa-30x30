@@ -1,0 +1,69 @@
+{
+ "n": 65,
+ "n_points_unmeasured": 2,
+ "points": [
+  {
+   "SitRecID": 6182,
+   "IntName": "B\u00e9ni Abb\u00e8s",
+   "RepAreaKM2": 0.0
+  },
+  {
+   "SitRecID": 6175,
+   "IntName": "Garaet Haouas",
+   "RepAreaKM2": 0.0
+  }
+ ],
+ "pa_only": {
+  "mean": 35.150581966984674,
+  "complete": 13,
+  "partial": 22,
+  "none": 30
+ },
+ "pa_oecm": {
+  "mean": 43.50146032387374,
+  "complete": 17,
+  "partial": 22,
+  "none": 26
+ },
+ "total_kba_km2": 216286.1264948407,
+ "foreign": [
+  {
+   "SitRecID": 6503,
+   "ISO3": "MAR",
+   "name": "Jbel Krouz",
+   "overlap_km2": 84.656
+  },
+  {
+   "SitRecID": 46654,
+   "ISO3": "TUN",
+   "name": "R\u00e9serve Naturelle Jebel El Ghorra",
+   "overlap_km2": 0.232
+  },
+  {
+   "SitRecID": 46670,
+   "ISO3": "MAR",
+   "name": "Plaines c\u00f4ti\u00e8res de Saidia",
+   "overlap_km2": 0.008
+  }
+ ],
+ "terrestrial": {
+  "n": 63,
+  "mean_pa": 34.309868737304505,
+  "mean_pa_oecm": 42.92585434361861
+ },
+ "marine": {
+  "n": 4,
+  "mean_pa": 43.94230803850093,
+  "mean_pa_oecm": 43.94230803850093
+ },
+ "freshwater": {
+  "n": 24,
+  "mean_pa": 60.22444703682805,
+  "mean_pa_oecm": 60.22444703682805
+ },
+ "mountain": {
+  "n": 42,
+  "mean_pa": 15.984476318307754,
+  "mean_pa_oecm": 22.73759248468587
+ }
+}

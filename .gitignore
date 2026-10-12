@@ -1,0 +1,29 @@
+# Code, Excel workbooks and outputs only. Raw input data, documents and spatial layers stay local.
+*/01_data/
+*/02_documents/
+KBAs/
+# spatial layers (shapefile parts, GeoPackage, GeoJSON, rasters, archives)
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.atx
+*.shp.xml
+*.qmd
+*.gpkg
+*.geojson
+*.tif
+*.tiff
+*.zip
+# local and tooling files
+~$*
+.DS_Store
+.vercel/
+.env*
+node_modules/
+__pycache__/
+*.pyc
+north_africa_dashboard/page/

@@ -1,0 +1,23 @@
+{
+ "land_km2": 1630170.1447162202,
+ "marine_km2": 357322.9252220743,
+ "gross_pa_terr": 2099.334168672424,
+ "gross_pa_mar": 2241.0600302971384,
+ "gross_oecm_terr": 0.0,
+ "gross_oecm_mar": 0.0,
+ "flat_pa_terr": 2099.334168672423,
+ "flat_pa_mar": 2241.0600302971384,
+ "flat_oecm_terr": 0.0,
+ "flat_oecm_mar": 0.0,
+ "overlap_pairs": 0,
+ "rivers_km": 407950.9135308228,
+ "rivers_in_pa_km": 465.080710279535,
+ "rivers_in_oecm_km": 0.0,
+ "n_records": 5,
+ "n_included": 5,
+ "n_pa_included": 5,
+ "n_oecm_included": 0,
+ "excluded": {
+  "": 5
+ }
+}

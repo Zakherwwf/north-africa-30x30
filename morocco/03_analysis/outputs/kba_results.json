@@ -1,0 +1,64 @@
+{
+ "n": 67,
+ "n_points_unmeasured": 0,
+ "points": [],
+ "pa_only": {
+  "mean": 24.175937866793703,
+  "complete": 3,
+  "partial": 32,
+  "none": 32
+ },
+ "pa_oecm": {
+  "mean": 58.47646684753493,
+  "complete": 18,
+  "partial": 45,
+  "none": 4
+ },
+ "total_kba_km2": 53491.62830079667,
+ "foreign": [
+  {
+   "SitRecID": 46585,
+   "ISO3": "DZA",
+   "name": "Ghar Rouban",
+   "overlap_km2": 3.286
+  },
+  {
+   "SitRecID": 46656,
+   "ISO3": "DZA",
+   "name": "Monts des Traras",
+   "overlap_km2": 3.7
+  },
+  {
+   "SitRecID": 28513,
+   "ISO3": "ESP",
+   "name": "Estrecho de Gibraltar",
+   "overlap_km2": 36.919
+  },
+  {
+   "SitRecID": 1878,
+   "ISO3": "ESP",
+   "name": "Chafarinas Islands",
+   "overlap_km2": 275.056
+  }
+ ],
+ "terrestrial": {
+  "n": 64,
+  "mean_pa": 23.74668495429966,
+  "mean_pa_oecm": 59.65500383052121
+ },
+ "marine": {
+  "n": 16,
+  "mean_pa": 42.47077744488801,
+  "mean_pa_oecm": 69.81352627738394
+ },
+ "freshwater": {
+  "n": 38,
+  "mean_pa": 26.27610085754012,
+  "mean_pa_oecm": 54.5373618919253
+ },
+ "mountain": {
+  "n": 32,
+  "mean_pa": 19.46578177447485,
+  "mean_pa_oecm": 48.29504815085275
+ }
+}
